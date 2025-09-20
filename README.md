@@ -8,14 +8,14 @@
   <h1>🎶 Моят YouTube плейлист</h1>
 
   <iframe width="560" height="315" 
-          src="https://www.youtube.com/embed/PL72vd52aOG3GZoB_tP-RpDSzjekTeULKX&index=3" 
+          src="https://www.youtube.com/watch?v=V3LZM6T2Ibo&list=PL72vd52aOG3GZoB_tP-RpDSzjekTeULKX&index=3" 
           frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
   </iframe>
 
   <br><br>
 
   <iframe width="560" height="315" 
-          src="https://www.youtube.com/embed/PL72vd52aOG3GZoB_tP-RpDSzjekTeULKX&index=5" 
+          src="https://www.youtube.com/watch?v=XcDhllo8KK8&list=PL72vd52aOG3GZoB_tP-RpDSzjekTeULKX&index=5" 
           frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
   </iframe>
 </body>
