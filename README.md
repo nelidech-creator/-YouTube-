@@ -47,19 +47,26 @@
   <div class="playlist">
     <button onclick="playVideo('KxnpFKZowcs&list=PL72vd52aOG3EIu08LplUxm8lCuhhi-sjf---')">Песен 1</button>
     <button onclick="playVideo('kNdNKiuMKvY&list=PLi8XXYFVzNYfWLr9E81WXkdcapjtqfWk5---')">Песен 2</button>
-    <button onclick="playVideo('3JZ_D3ELwOQ')">Песен 3</button>
+    <button onclick="playVideo('IJT0SewidWU&list=PLi8XXYFVzNYfWLr9E81WXkdcapjtqfWk5&index')">Песен 3</button>
   </div>
 
   <iframe id="player" width="560" height="315"
           src="https://www.youtube.com/watch?v=KxnpFKZowcs&list=PL72vd52aOG3EIu08LplUxm8lCuhhi-sjf---"
           frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-  </iframe>
-
+  
+ <iframe id="player" width="560" height="315"
+          src="https://www.youtube.com/watch?v=kNdNKiuMKvY&list=PLi8XXYFVzNYfWLr9E81WXkdcapjtqfWk5---"
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+    <iframe id="player" width="560" height="315"
+          src="https://www.youtube.com/watch?v=IJT0SewidWU&list=PLi8XXYFVzNYfWLr9E81WXkdcapjtqfWk5&index"
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
   <script>
-    function playVideo(videoId) {
-      document.getElementById("player").src = 
-        "https://www.youtube.com/watch?v=kNdNKiuMKvY&list=PLi8XXYFVzNYfWLr9E81WXkdcapjtqfWk5---" + videoId + "?autoplay=1";
-    }
+    function playVideo(videoId, playlistId = null) {
+      let url = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
+      if (playlistId) {
+        url += "&list=" + playlistId;
+      }
+      document.getElementById("player").src = url;
   </script>
 </body>
 </html>
